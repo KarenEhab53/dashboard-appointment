@@ -1,0 +1,56 @@
+.all-doctors{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    max-width: 100%;
+    padding: 30px 40px;
+    flex-direction: column;
+    color: #323232;
+    height: 80vh;
+    overflow: auto;
+}
+.all-doctors .header{
+font-size: 22px;
+font-weight: 500;
+}
+.all-doctors .boxs{
+    /* width: 250px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 20px;
+    row-gap: 1.5rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.all-doctors .boxs .singledoc{
+    border: 1px solid #C9D8FF;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 1s;
+}
+.all-doctors .boxs .singledoc:hover{
+    transform: translateY(-10px);
+    transition: 1s;
+}
+.all-doctors .boxs .singledoc img{
+    width: 200px;
+    height: 200px;
+    background-color: #EAEFFF;
+}
+.all-doctors .boxs .singledoc .data{
+    display: flex;
+    flex-direction: column;
+    padding: 10px ;
+}
+@media screen and (min-width: 768px) {
+    .all-doctors .boxs{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .all-doctors .boxs{
+        grid-template-columns: repeat(4,1fr);
+    }
+}

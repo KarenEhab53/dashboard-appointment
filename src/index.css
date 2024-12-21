@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+*{
+    font-family: "Outfit";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-primary: #5f6FFF;
+    --color-white: #FFFFFF;
+    --color-gray : #595959;
+    --color-secondary: #1F2937;
+    --color-darkGray : #4B5563;
+    --color-green: #0FBF00;
+    --color-lightGray:#ABABAB;
+    --color-creamy: #F2F3FF;
+    --color-body:#F8F9FD;
+    
+}
+body{
+    background: var(--color-body);
+}
+ul , li {
+    list-style: none;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+ 

@@ -1,0 +1,55 @@
+
+.appointment{
+    max-width: 100%;
+padding: 30px 30px;
+overflow: auto;
+min-height: 80vh;
+}
+.appointment h1{
+    margin-bottom: 1rem;
+    font-size: x-large;
+    font-weight: 500;
+}
+.appointment .table {
+    width: 72rem;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #D8D8D8;
+    font-size: small;
+    max-height: 80vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    scrollbar-width: none;
+
+    
+    
+}
+.appointment .table .headers{
+
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 2fr 1fr 1fr 3fr 1fr 1fr; ;
+    grid-auto-flow: column;
+    padding: 1rem 1.5rem;
+    border: 1px solid #D8D8D8;
+    align-items: start;
+}
+.appointment .table .headers .user img{
+    width: 40px;
+    border-radius: 50%;
+}
+.appointment .table .headers .user ,
+.appointment .table .headers .doctor{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3px;
+
+}
+.appointment .table .headers .doctor img{
+background-color: #EAEFFF;
+width: 40px;
+border-radius:50%;
+}
